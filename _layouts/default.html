@@ -28,14 +28,19 @@
         .col-6 {
             flex-basis: 50%;
         }
+        .mobile-col {
+            padding-left: 30px;
+        }
+        .mobile-wrapper {
+            width: 419px;
+            height: 840px;
+            background: url('images/iphone-11.png') no-repeat center/cover;
+        }
         .mobile {
             border: 0;
             width: 360px;
             height: 600px;
             margin-left: auto;
-        }
-        .mobile-col {
-            padding-left: 30px;
         }
         @media (max-width: 672px) {
             .row {
@@ -72,7 +77,7 @@
            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>open, close, toggle</code></pre></div></div>
         </div>
         <div class="col-6 mobile-col">
-            <iframe class="mobile" src="frame.html"></iframe>
+            <div class="mobile-wrapper"><iframe class="mobile" src="frame.html"></iframe></div>
         </div>
     </div>
 
