@@ -1,3 +1,4 @@
+# Mobile Swipe Menu
 ### Options
 ```
 mode - operating mode (right, left)
