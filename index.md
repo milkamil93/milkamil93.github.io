@@ -1,19 +1,4 @@
 # Mobile Swipe Menu
-### Options
-```
-mode - operating mode (right, left)
-width - menu width
-hookWidth - protrusion width
-enableWindowHook - react to the whole window
-```
-### Events
-```
-events: {
-    opening: function () {},
-    closing: function () {},
-    drag: function (swipe) {}
-}
-```
 ### Example
 #### ES6
 ```javascript

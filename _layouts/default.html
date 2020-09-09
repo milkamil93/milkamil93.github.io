@@ -34,20 +34,26 @@
         .mobile-wrapper {
             width: 419px;
             height: 840px;
+            padding: 20px 0 0 32px;
             background: url('images/iphone-11.png') no-repeat center/cover;
         }
         .mobile {
             border: 0;
             width: 360px;
-            height: 600px;
+            height: 776px;
             margin-left: auto;
+            border-radius: 35px;
+            box-sizing: border-box;
         }
         @media (max-width: 672px) {
             .row {
-                display: block;
+                flex-direction: column;
             }
             .col-6 {
                 margin-bottom: 15px;
+            }
+            .col-text {
+                order: 1;
             }
         }
     </style>
@@ -68,13 +74,44 @@
 <main id="content" class="main-content" role="main">
 
     <div class="row">
-        <div class="col-6">
-           <h3 id="installation">Installation</h3>
-           <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i mobile-swipe-menu --save</code></pre></div></div>
-           <h3 id="using">Using</h3>
-           <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>new MobileSwipeMenu(selector, options)</code></pre></div></div>
-           <h3 id="methods">Methods</h3>
-           <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>open, close, toggle</code></pre></div></div>
+        <div class="col-6 col-text">
+            <h3 id="installation">Installation</h3>
+            <div class="language-plaintext highlighter-rouge">
+                <div class="highlight">
+                    <pre class="highlight"><code>npm i mobile-swipe-menu --save</code></pre>
+                </div>
+            </div>
+            <h3 id="using">Using</h3>
+            <div class="language-plaintext highlighter-rouge">
+                <div class="highlight">
+                    <pre class="highlight"><code>new MobileSwipeMenu(selector, options)</code></pre>
+                </div>
+            </div>
+            <h3 id="methods">Methods</h3>
+            <div class="language-plaintext highlighter-rouge">
+                <div class="highlight">
+                    <pre class="highlight"><code>open, close, toggle</code></pre>
+                </div>
+            </div>
+            <h3 id="options">Options</h3>
+            <div class="language-plaintext highlighter-rouge">
+                <div class="highlight"><pre class="highlight"><code>mode - operating mode (right, left)
+width - menu width
+hookWidth - protrusion width
+enableWindowHook - react to the whole window
+</code></pre>
+                </div>
+            </div>
+            <h3 id="events">Events</h3>
+            <div class="language-plaintext highlighter-rouge">
+                <div class="highlight"><pre class="highlight"><code>events: {
+    opening: function () {},
+    closing: function () {},
+    drag: function (swipe) {}
+}
+</code></pre>
+                </div>
+            </div>
         </div>
         <div class="col-6 mobile-col">
             <div class="mobile-wrapper"><iframe class="mobile" src="frame.html"></iframe></div>
