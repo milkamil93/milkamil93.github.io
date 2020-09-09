@@ -25,6 +25,11 @@
         .col-6 {
             flex-basis: 50%;
         }
+        .mobile {
+            border: 0;
+            width: 360px;
+            height: 600px;
+        }
         @media (max-width: 672px) {
             .row {
                 display: block;
@@ -59,7 +64,9 @@
            <h3 id="methods">Methods</h3>
            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>open, close, toggle</code></pre></div></div>
         </div>
-        <div class="col-6">col</div>
+        <div class="col-6">
+            <iframe class="mobile" src="frame.html"></iframe>
+        </div>
     </div>
 
     {{ content }}
