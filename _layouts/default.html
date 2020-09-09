@@ -19,6 +19,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <style>
+        #mobile-swipe-menu {
+            display: none;
+        }
         .row {
             display: flex;
         }
@@ -29,6 +32,10 @@
             border: 0;
             width: 360px;
             height: 600px;
+            margin-left: auto;
+        }
+        .mobile-col {
+            padding-left: 30px;
         }
         @media (max-width: 672px) {
             .row {
@@ -64,7 +71,7 @@
            <h3 id="methods">Methods</h3>
            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>open, close, toggle</code></pre></div></div>
         </div>
-        <div class="col-6">
+        <div class="col-6 mobile-col">
             <iframe class="mobile" src="frame.html"></iframe>
         </div>
     </div>
