@@ -1,6 +1,3 @@
-```
-new MobileSwipeMenu(selector, options)
-```
 ### Options
 ```
 mode - operating mode (right, left)
