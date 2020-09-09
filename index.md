@@ -32,7 +32,7 @@ events: {
 ```
 ### Example
 #### ES6
-```
+```javascript
 import MobileSwipeMenu from 'mobile-swipe-menu';
 new MobileSwipeMenu('#menu', {
     mode: 'right',
@@ -40,7 +40,7 @@ new MobileSwipeMenu('#menu', {
 });
 ```
 #### OR
-```
+```html
 <script src="js/mobile-swipe-menu.min.js"></script>
 <script>
     var mobileMenu = new MobileSwipeMenu('#menu', {
