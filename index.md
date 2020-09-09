@@ -1,10 +1,3 @@
-###### Demo: [https://milkamil93.github.io/demo.html](https://milkamil93.github.io/demo.html)
-
-### Installation
-```
-npm i mobile-swipe-menu --save
-```
-### Using
 ```
 new MobileSwipeMenu(selector, options)
 ```
@@ -14,10 +7,6 @@ mode - operating mode (right, left)
 width - menu width
 hookWidth - protrusion width
 enableWindowHook - react to the whole window
-```
-### Methods
-```
-open, close, toggle
 ```
 ### Events
 ```

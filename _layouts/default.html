@@ -25,6 +25,14 @@
         .col-6 {
             flex-basis: 50%;
         }
+        @media (max-width: 672px) {
+            .row {
+                display: block;
+            }
+            .col-6 {
+                margin-bottom: 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -45,7 +53,14 @@
 <main id="content" class="main-content" role="main">
 
     <div class="row">
-        <div class="col-6">col</div>
+        <div class="col-6">
+           <h3 id="installation">Installation</h3>
+           <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i mobile-swipe-menu --save</code></pre></div></div>
+           <h3 id="using">Using</h3>
+           <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>new MobileSwipeMenu(selector, options)</code></pre></div></div>
+           <h3 id="methods">Methods</h3>
+           <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>open, close, toggle</pre></div></div>
+        </div>
         <div class="col-6">col</div>
     </div>
 
