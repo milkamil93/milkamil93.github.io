@@ -111,7 +111,7 @@
         </div>
         <div id="toggleMenu">Toggle menu</div>
     </div>
-    <script src="js/mobile-swipe-menu.min.js"></script>
+    <script src="js/mobile-swipe-menu.min.js?v=2.0.6"></script>
     <script>
         var mobileMenu = new MobileSwipeMenu('#menu', {
             mode: 'right',
@@ -119,13 +119,10 @@
             enableBodyHook: true,
             events: {
                 opening: function () {
-                    console.log(this, 'Opened');
                 },
                 closing: function () {
-                    console.log(this, 'Closed');
                 },
                 drag: function (swipe) {
-                    console.log(this, swipe);
                 }
             }
         });
